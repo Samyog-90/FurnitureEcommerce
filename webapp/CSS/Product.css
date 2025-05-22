@@ -1,0 +1,149 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 15px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+.cart-icon {
+    width: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.sofa-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sofa {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.sofa img {
+    width: 100%;
+    height: auto;
+}
+
+.add-to-cart {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+}
+
+
+.chair-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.chair {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.chair img {
+    width: 100%;
+    height: auto;
+}
+
+.bed-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.Bed {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.Bed img {
+    width: 100%;
+    height: auto;
+}
+
+.dining-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dining {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.dining img {
+    width: 100%;
+    height: auto;
+}
+.table-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.table {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.table img {
+    width: 100%;
+    height: auto;
+}
+

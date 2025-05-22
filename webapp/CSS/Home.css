@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 16px;
+    color: #000;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styles */
+header {
+    background-color: transparent;
+    padding: 15px 0;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.nav-logo {
+    text-decoration: none;
+}
+
+.logo-text {
+    color: #000;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #666;
+}
+
+.home-link::before {
+    content: "⌂";
+    margin-right: 3px;
+}
+
+/* Main content */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section {
+    height: 100vh;
+    position: relative;
+    background-image: url("../Images/homepageimage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.content-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-details {
+  position: absolute;
+  top: 40%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+}
+
+.title {
+    font-family: 'Times New Roman', serif;
+    font-size: 42px;
+    font-weight: normal;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-family: 'Times New Roman', serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: italic;
+    color: #000;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.shop-now-btn {
+    display: inline-block;
+    background-color: #ffde00;
+    padding: 10px 25px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.shop-now-btn:hover {
+    background-color: #f8d500;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .nav-menu {
+        margin-top: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .hero-details {
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 80%;
+    }
+    
+    .buttons {
+        position: absolute;
+        bottom: 50px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
